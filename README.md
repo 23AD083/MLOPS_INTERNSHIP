@@ -14,3 +14,5 @@ This project uses AWS cloud services for full-stack deployment.
 -------------------------------------------------------------------------------------
 
 Day 2 - https://colab.research.google.com/drive/1j_AxdVKiAFHak1ATHendQVsIUd3vqa5I?usp=sharing
+flowchart : 
+<img width="365" height="906" alt="image" src="https://github.com/user-attachments/assets/44dd270f-4246-4a27-a454-a9017eaf24a6" />
