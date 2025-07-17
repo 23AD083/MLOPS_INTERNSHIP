@@ -22,4 +22,6 @@ drive link : https://drive.google.com/drive/u/0/folders/1yXIJInYde7_EWJbRJI_4xJk
 
 
 hugging face : 
-![Uploading image.png…]()
+<img width="1870" height="875" alt="image" src="https://github.com/user-attachments/assets/66919cc5-f0cf-4a81-8dcd-04829681b3e4" />
+
+
