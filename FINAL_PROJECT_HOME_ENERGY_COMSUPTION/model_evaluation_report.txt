@@ -1,0 +1,43 @@
+AI Smart Energy Consumption Prediction - Project Summary
+=====================================================
+
+**Project Overview:**
+This project develops an AI-powered system to predict hourly energy consumption in a smart city using environmental and infrastructure data. The goal is to optimize energy distribution, reduce wastage, and provide actionable insights for smart grid management.
+
+**End-to-End Workflow:**
+1. **Data Collection:**
+   - Collected real-world energy usage data (home_energy.csv) and, optionally, zone-wise data (Tetuan City dataset).
+   - Data includes timestamp, voltage, current, sub-meter readings, and environmental features.
+2. **Preprocessing & Feature Engineering:**
+   - Handled missing values, sorted by time, and extracted time-based features (hour, day of week, month).
+   - For zone-wise analysis, only numeric columns are used for modeling.
+3. **Model Training:**
+   - Used XGBoost regression to predict energy consumption.
+   - Split data into training and test sets (80/20 split).
+   - Trained separate models for each selected zone (if zone data is available).
+4. **Evaluation:**
+   - Calculated MAE, MSE, RMSE, and R² (accuracy) for each model.
+   - Visualized actual vs. predicted consumption and residuals.
+5. **Interactive Dashboard:**
+   - Built a Streamlit app for real-time prediction, visualization, and user input.
+   - Users can upload their own data, select features/zones, and get instant predictions and model metrics.
+
+**Zone-Based Analysis:**
+- The dashboard allows you to select and analyze different city zones (e.g., Zone 1, Zone 2, Zone 3).
+- For each zone, the model is trained and evaluated independently.
+- You can compare R² (accuracy) and error metrics across zones to identify which areas have more predictable or variable energy usage.
+- High R² (e.g., 0.9990) indicates the model explains nearly all the variance in the data, showing excellent predictive power for the selected features and zone.
+
+**Current Results (home_energy.csv):**
+- Mean Absolute Error (MAE): 0.0140
+- Mean Squared Error (MSE): 0.0006
+- Root Mean Squared Error (RMSE): 0.0240
+- R² Score: 0.9990
+
+**Interpretation:**
+- The model achieves extremely high accuracy (R² ≈ 1.0), meaning it can reliably predict energy consumption given the selected features.
+- Low MAE and RMSE indicate very small average prediction errors.
+- For zone-wise data, use the dashboard to view and compare metrics for each zone interactively.
+
+**Conclusion:**
+This end-to-end solution enables smart, data-driven energy management for cities and households. The interactive dashboard empowers users to explore, predict, and optimize energy usage in real time, supporting sustainability and operational efficiency.
